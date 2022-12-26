@@ -1,0 +1,71 @@
+.transitionLabel{
+    font-size: 16px;
+    font-weight: 400;
+    
+    position: absolute;
+    left: 0;
+
+    color: rgb(150, 150, 150);
+
+    cursor: text;
+    transition: 0.5s ease-in-out;
+}
+
+.noTransitionLabel{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(150, 150, 150);
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 5px;
+
+    border: 0;
+    border-bottom: 2px solid var(--color-grey-2);
+
+    font-size: 16px;
+    color: var(--color-grey-1);
+    
+    background-color: var(--color-grey-4);
+    outline: 0;
+}
+
+input[type="text"]:focus, input[type="text"]:valid{
+    border: 0;
+    border-bottom: 2px solid var(--color-brand-3);
+}
+
+input[type="text"]:focus ~ label, input[type="text"]:valid ~ label{
+    transform: translateY(-18px);
+    font-size: 13px;
+    font-weight: 600;
+
+    color: var(--color-brand-3);
+}
+
+input[type="time"], input[type="date"] {
+    width: 100%;
+    max-width: 180px;
+    padding: 5px;
+    margin: 0;
+
+    border: 0;
+    border-bottom: 2px solid var(--color-grey-2);
+
+    font-size: 16px;
+    color: var(--color-grey-1);
+    
+    background-color: var(--color-grey-4);
+    outline: 0;
+}
+
+input[type="time"]:focus, input[type="date"]:focus, input[type="time"]:valid, input[type="date"]:valid{
+    border: 0;
+    border-bottom: 2px solid var(--color-brand-3);
+}
+
+.diferentDisplay:focus-within > label {
+    color: var(--color-brand-3);
+}

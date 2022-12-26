@@ -33,3 +33,17 @@
     width: 70%;
     height: 70%;    
 }
+
+.button_form{
+    width: 90%;
+    max-width: 500px;
+    height: 38px;
+    cursor: pointer;
+
+    background: var(--color-brand-3);
+    border: 2px solid var(--color-brand-3);
+    border-radius: 20px;
+
+    color: var(--color-grey-4);
+    font-weight: 600;
+}

@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/globalStyles.css">
-    <link rel="stylesheet" href="./styles/buttons.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/inputs.css">
+    <link rel="stylesheet" href="../../styles/buttons.css">
+    <link rel="stylesheet" href="./profissionais.css">
     <title>Projeto 2 - Medicina Nuclear - Profissionais</title>
 </head>
 <body>
-    <div class="container">
-        <div class="wrapper">
-            <main>
-                <header> <h2>Lista de Exposição</h2></header>
-                <div class="buttons_box">
-                    <button type="button"><div><img src="./images/doctor.png" alt="doctorIcon"></div>Profissionais</button>
-                    <button type="button"><div><img src="./images/patient.png" alt="doctorIcon"></div>Pacientes</button>
-                    <button type="button"><div><img src="./images/anotacoes.png" alt="doctorIcon"></div>Leitura</button>
-                    <button type="button"><div><img src="./images/print (1).png" alt="doctorIcon"></div>Relatório de dose</button>
-                </div>
-            </main>
-        </div>
+    <div class="wrapper">
+        <a href="../../index.html">Voltar</a>
+        <form id="profissionais" action="">
+            <legend>Informe os dados para cadastro</legend>
+            <fieldset>
+                <input type="text" name="name" id="name" required>
+                <label class="transitionLabel" for="name">Nome do profissional</label>
+            </fieldset>
+            <fieldset>
+                <input type="text" id="occupation" required>
+                <label class="transitionLabel" for="occupation">Descrição da função</label>
+            </fieldset>
+            <button class="button_form" type="submit">Adicionar Profissional</button>
+        </form>
     </div>
 </body>
 </html>

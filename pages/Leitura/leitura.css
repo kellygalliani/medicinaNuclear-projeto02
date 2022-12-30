@@ -39,6 +39,11 @@ fieldset.diferentDisplay{
     display: flex;
     gap: 25px;    
 }
+div.permanenceTime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media (max-width:340px) {
     .inputsRowBox{
         width: 100%;
@@ -47,3 +52,4 @@ fieldset.diferentDisplay{
         gap: 25px;    
     }
 }
+

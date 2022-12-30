@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/modal.css">
     <link rel="stylesheet" href="../../styles/inputs.css">
     <link rel="stylesheet" href="../../styles/buttons.css">
-    <link rel="stylesheet" href="./pacientes.css">
+    <link rel="stylesheet" href="./leitura.css">
+    <script src="../../script/clickTest.js" defer></script>
     <title>Projeto 2 - Medicina Nuclear - Profissionais</title>
 </head>
 <body>
@@ -16,18 +18,48 @@
         <form id="profissionais" action="">
             <legend>Informe os dados para cadastro</legend>
             <fieldset class="regularDisplay">
-                <input type="text" name="name" id="name" required>
-                <label class="transitionLabel" for="name">Nome do paciente</label>
+                <input class="inputName" type="text" name="name" id="name" required>
+                <label class="transitionLabel" for="name">Profissional</label>
+            </fieldset>
+            <fieldset class="regularDisplay">
+                <input class="inputName" type="text" name="name" id="name" required>
+                <label class="transitionLabel" for="name">Paciente</label>
+            </fieldset>
+            <fieldset class="regularDisplay">
+                <input class="inputName" type="text" name="name" id="name" required>
+                <label class="transitionLabel" for="name">Evento</label>
             </fieldset>
             <fieldset class="diferentDisplay">
-                <label class="noTransitionLabel" for="datetime">Aplicação do radiofármaco</label>
                 <div class="inputsRowBox">
-                    <input type="date" id="datetime" required>
-                    <input type="time" id="datetime" required>
+                    <div>
+                        <label class="noTransitionLabel" for="date">Data</label>
+                        <input type="date" id="datetime" required>
+                    </div>
+                    <div>
+                        <label class="noTransitionLabel" for="time">Hora</label>
+                        <input type="time" id="datetime" required>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="diferentDisplay">
+                <div>
+                    <label class="noTransitionLabel" for="number">Tempo de permanência</label>
+                    <div class="permanenceTime">
+                        <input type="number" id="number" required>
+                        <span>minutos</span>
+                    </div>
                 </div>
             </fieldset>
             <button class="button_form" type="submit">Adicionar Paciente</button>
         </form>
     </div>
+    <dialog>
+            <div class="content">
+                <span style="cursor: pointer;">Débora</span>
+            </div>
+            <div class="closeModal">
+                <button class="button_modal">Cancelar</button>
+            </div>
+    </dialog>
 </body>
 </html>

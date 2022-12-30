@@ -25,6 +25,12 @@
     width: 90%;
     max-width: 700px;
     height: auto;
+    max-height: 90%;
+  }
+
+  legend{
+    width: 80%;
+    font-size: 18px;
   }
   
   :root {
@@ -40,4 +46,4 @@
     --color-grey-4: #F5F5F5;
 
     --font-family: 'Inter', sans-serif;
-}
+  }

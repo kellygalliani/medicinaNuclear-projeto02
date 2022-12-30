@@ -47,3 +47,17 @@
     color: var(--color-grey-4);
     font-weight: 600;
 }
+
+.button_modal{
+    width: 90px;
+    height: 20%;
+    margin: 0;
+
+    background: var(--color-brand-3);
+    
+    border: 2px solid var(--color-brand-3);
+    border-radius: 20px;
+
+    color: var(--color-grey-4);
+    cursor: pointer;
+}

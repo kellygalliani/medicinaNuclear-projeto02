@@ -12,6 +12,7 @@ export const modalTypeList = (list, input)=>{
         li.addEventListener("click", ()=>{
             input.value = item
             inputsObserveValueForChangingCss()
+            modal.close()
         })
         ulModal.append(li)
     }) 

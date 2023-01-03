@@ -1,29 +1,38 @@
-const buttonsHome = document.querySelectorAll("button")
 
-const arrayButtons = [...buttonsHome]
-arrayButtons.forEach((button)=>{
-    /* console.log(button.innerText) */
-    button.addEventListener("click", ()=>{
-        
-        if(button.innerText === "Profissionais"){
-            window.location.replace("./pages/Profissionais/profissionais.html")
-            console.log(button.innerText)
-        }
-        if(button.innerText === "Pacientes"){
-            window.location.replace("./pages/Pacientes/pacientes.html")
-        }
-        if(button.innerText === "Leitura"){
-            window.location.replace("./pages/Leitura/leitura.html")
-        }
-    })
-})
-
-const inputProfissional = document.querySelector(".inputName")
-const modal = document.querySelector("dialog")
+/* MODAL GERAL DO TIPO LISTA */
 const closeModal = document.querySelector(".button_modal")
 
-inputProfissional.addEventListener("click", ()=> modal.showModal())
-closeModal.addEventListener("click", ()=> modal.close())
+export const modalTypeList = (list, input)=>{
+    const modal = document.querySelector("dialog")
+    const ulModal = document.querySelector(".contentModalList")
+    ulModal.innerHTML = ""
+    list.forEach((item)=>{
+        const li = document.createElement("li")
+        li.innerText = item
+        li.addEventListener("click", ()=>{
+            input.value = item
+            inputsObserveValueForChangingCss()
+        })
+        ulModal.append(li)
+    }) 
+    modal.append(ulModal, closeModal)
+    modal.showModal()
+    closeModal.addEventListener("click", ()=> modal.close())
+}
 
-/* DOM MODAL */
+/* MUDANDO A COR DOS INPUTS QUANDO UM ITEM FOR SELECIONADO NO MODAL  - função está sendo chamada no modal*/
+const selectedInputs = document.querySelectorAll(".selectedInput")
 
+export const inputsObserveValueForChangingCss = ()=>{
+    selectedInputs.forEach((selectedInput)=>{
+            if(selectedInput.value){
+                selectedInput.style.cssText = "border-bottom: 2px solid var(--color-brand-3)";
+                selectedInput.previousElementSibling.style.cssText = 
+                "transform: translateY(-18px);"+
+                "font-size: 13px;" + 
+                "font-weight: 600;"+            
+                "color: var(--color-brand-3);"
+            }
+    })
+}
+inputsObserveValueForChangingCss()

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/modalList.css">
+    <link rel="stylesheet" href="../../styles/inputs.css">
+    <link rel="stylesheet" href="../../styles/buttons.css">
+    <link rel="stylesheet" href="./relatorio.css">
+    <script type="module" src="./relatorio.js" defer></script>
+    <title>Projeto 2 - Medicina Nuclear - Profissionais</title>
+</head>
+<body>
+    <div class="wrapper">
+        <a href="../../index.html">Voltar</a>
+        <form id="relatorio" action="">
+            <legend>Relatório de dose</legend>
+            <fieldset class="regularDisplay">
+                <input class="inputName" type="text" name="professional" id="professional" required>
+                <label class="transitionLabel" for="professional">Selecione o profissional</label>
+            </fieldset>
+            <fieldset class="regularDisplay">
+                <input class="inputName" type="text" name="patient" id="patient" required>
+                <label class="transitionLabel" for="patient">Selecione o paciente</label>
+            </fieldset>
+            <fieldset class="diferentDisplay">
+                <label class="noTransitionLabel" for="date">Exibir leitura de</label>
+                <div class="inputsRowBox">            
+                    <input type="date" id="date" required>
+                    <span>à</span>
+                    <input type="date" id="date" required>    
+                    <button class="button_form searchRelatorio" type="submit">Pesquisar</button>      
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <dialog class="modalList">
+        <ul class="contentModalList">
+            <!-- <li style="cursor: pointer;">Débora</li> -->
+        </ul>
+        <div class="closeModal">
+            <button class="button_modal">Cancelar</button>
+        </div>
+    </dialog>
+    <dialog class="modalReports">
+        <div class="contentModalReports">
+            <div class="informationsBox"> 
+                <div class="professionalDivModal">
+                    <h2>Profissional:</h2>
+                    <p>Dilene</p> 
+                </div>
+                <div class="patientDivModal">
+                    <h2>Paciente:</h2>
+                    <p>Doravente Diniz De Eusébio Cabrito</p>
+                </div> 
+            </div>
+            <div class="measurements">
+                <div class="contentMeasurements">
+                    <div class="contentMeasurements--event">
+                        <h3>Evento</h3>
+                        <p>Verificação dos sinais vitais</p>
+                    </div>
+                    <div class="contentMeasurements--others">
+                        <div>
+                            <h3>Data</h3>
+                            <p>28/11/22</p>
+                        </div>
+                        <div>
+                            <h3>Hora</h3>
+                            <p>09:00</p>
+                        </div>
+                        <div>
+                            <h3>Tempo</h3>
+                            <p>5 min</p>
+                        </div>
+                        <div>
+                            <h3>Distância</h3>
+                            <p>50 cm</p>
+                        </div>
+                        <div>
+                            <h3>Dose</h3>
+                            <p>1,54</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doseTotal"><h3>Dose Total: 1,54</h3></div>
+            </div>
+            <div class="measurements">
+                <div class="contentMeasurements">
+                    <div class="contentMeasurements--event">
+                        <h3>Evento</h3>
+                        <p>Verificação dos sinais vitais</p>
+                    </div>
+                    <div class="contentMeasurements--others">
+                        <div>
+                            <h3>Data</h3>
+                            <p>28/11/22</p>
+                        </div>
+                        <div>
+                            <h3>Hora</h3>
+                            <p>09:00</p>
+                        </div>
+                        <div>
+                            <h3>Tempo</h3>
+                            <p>5 min</p>
+                        </div>
+                        <div>
+                            <h3>Distância</h3>
+                            <p>50 cm</p>
+                        </div>
+                        <div>
+                            <h3>Dose</h3>
+                            <p>1,54</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doseTotal"><h3>Dose Total: 1,54</h3></div>
+            </div>
+            <div class="measurements">
+                <div class="contentMeasurements">
+                    <div class="contentMeasurements--event">
+                        <h3>Evento</h3>
+                        <p>Verificação dos sinais vitais</p>
+                    </div>
+                    <div class="contentMeasurements--others">
+                        <div>
+                            <h3>Data</h3>
+                            <p>28/11/22</p>
+                        </div>
+                        <div>
+                            <h3>Hora</h3>
+                            <p>09:00</p>
+                        </div>
+                        <div>
+                            <h3>Tempo</h3>
+                            <p>5 min</p>
+                        </div>
+                        <div>
+                            <h3>Distância</h3>
+                            <p>50 cm</p>
+                        </div>
+                        <div>
+                            <h3>Dose</h3>
+                            <p>1,54</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doseTotal"><h3>Dose Total: 1,54</h3></div>
+            </div>
+            <div class="measurements">
+                <div class="contentMeasurements">
+                    <div class="contentMeasurements--event">
+                        <h3>Evento</h3>
+                        <p>Verificação dos sinais vitais</p>
+                    </div>
+                    <div class="contentMeasurements--others">
+                        <div>
+                            <h3>Data</h3>
+                            <p>28/11/22</p>
+                        </div>
+                        <div>
+                            <h3>Hora</h3>
+                            <p>09:00</p>
+                        </div>
+                        <div>
+                            <h3>Tempo</h3>
+                            <p>5 min</p>
+                        </div>
+                        <div>
+                            <h3>Distância</h3>
+                            <p>50 cm</p>
+                        </div>
+                        <div>
+                            <h3>Dose</h3>
+                            <p>1,54</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doseTotal"><h3>Dose Total: 1,54</h3></div>
+            </div>
+        </div>
+        <div class="closeModal closeModalRelatorio">
+            <button class="button_modal">Cancelar</button>
+        </div>
+    </dialog>
+</body>
+</html>

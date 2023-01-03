@@ -37,6 +37,7 @@ input[type="text"]:focus, input[type="text"]:valid{
     border-bottom: 2px solid var(--color-brand-3);
 }
 
+
 input[type="text"]:focus ~ label, input[type="text"]:valid ~ label{
     transform: translateY(-18px);
     font-size: 13px;
@@ -60,9 +61,12 @@ input[type="time"], input[type="date"], input[type="number"] {
     background-color: var(--color-grey-4);
     outline: 0;
 }
+
 input[type="number"]{
     width: 50px;
+    text-align: center;
 }
+
 input[type="time"]:focus, input[type="date"]:focus, input[type="number"]:focus, input[type="time"]:valid, input[type="date"]:valid, input[type="number"]:valid{
     border: 0;
     border-bottom: 2px solid var(--color-brand-3);
@@ -71,3 +75,4 @@ input[type="time"]:focus, input[type="date"]:focus, input[type="number"]:focus, 
 .diferentDisplay:focus-within > label {
     color: var(--color-brand-3);
 }
+
